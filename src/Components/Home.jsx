@@ -84,7 +84,7 @@ const Home = () => {
                     <i className="bi bi-twitter-x"></i>
                   </a>
                   <a
-                    href="https://instagram.com/pradeepa.dev"
+                    href="https://instagram.com/the._delizz"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

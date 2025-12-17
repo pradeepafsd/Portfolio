@@ -40,7 +40,21 @@ const Navbar = () => {
             {/* Navigation link to Projects/Work section */}
             <li className="nav-item">
               <Link to="projects" smooth={true} duration={500} offset={-80} className="nav-link">
-                Work
+                Projects
+              </Link>
+            </li>
+
+             {/* Navigation link to Experience section */}
+            <li className="nav-item">
+              <Link to="experience" smooth={true} duration={500} offset={-80} className="nav-link">
+                Experience
+              </Link>
+            </li>
+
+             {/* Navigation link to Certifications section */}
+            <li className="nav-item">
+              <Link to="certs" smooth={true} duration={500} offset={-80} className="nav-link">
+                Certs
               </Link>
             </li>
 

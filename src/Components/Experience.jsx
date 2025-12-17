@@ -11,10 +11,34 @@ import "react-vertical-timeline-component/style.min.css";
 
 // Importing company logo
 import cLogo from "../assets/sw-tech-logo.jpeg";
+import tutorLogo from "../assets/superprof-logo.png";
 
 const Experience = () => {
   // Timeline data for work experience
   const timelineData = [
+    {
+      title: "Web Development Tutor",
+      subtitle: "Superprof",
+      date: "Oct 2025 – Present",
+      description: [
+        "Delivered 1-on-1 online tutoring in HTML, CSS, JavaScript, and React to strengthen coding fundamentals.",
+        "Explained web development concepts using real-world examples to improve clarity and confidence.",
+        "Created structured lesson plans and hands-on coding exercises.",
+        "Improved student engagement through practical mini projects.",
+      ],
+      icon: (
+        <img
+          src={tutorLogo}
+          alt="tutor logo"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "50%",
+          }}
+        />
+      ),
+    },
     {
       title: "Full Stack Developer Intern",
       subtitle: "SmartWeb Technologies",
@@ -43,7 +67,7 @@ const Experience = () => {
 
   return (
     // Main container for the Experience section
-    <div className="container">
+    <div className="container" id="experience">
       <TrackVisibility partialVisibility>
         {({ isVisible }) => (
           <>
@@ -80,7 +104,9 @@ const Experience = () => {
                   contentArrowStyle={{ borderRight: "7px solid aqua" }}
                   iconStyle={{ background: "white" }}
                   icon={item.icon}
-                  className={isVisible ? "animate__animated animate__fadeInUp" : ""}
+                  className={
+                    isVisible ? "animate__animated animate__fadeInUp" : ""
+                  }
                 >
                   {/* Job title */}
                   <h3 className="vertical-timeline-element-title fs-5 fw-bold">

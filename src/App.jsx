@@ -12,6 +12,7 @@ import About from './Components/About';
 import Experience from './Components/Experience';
 import Tech from './Components/Tech';
 import Projects from './Components/Projects';
+import Certifications from './Components/Certifications';
 import Contact from './Components/Contact';
 // Importing Animate.css for animations
 import "animate.css";
@@ -29,6 +30,7 @@ function App() {
       <Experience/>
       <Tech/>
       <Projects/>
+      <Certifications/>
       <Contact/>
       {/* Rendering footer */}
       <Footer/>

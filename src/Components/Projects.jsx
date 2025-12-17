@@ -3,17 +3,33 @@ import React from "react";
 import { LuLink2 } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 // Importing project images
+import cryptoCrashImg from "../assets/crash-game-pic.webp"
 import aiProImg from "../assets/ai-p.jpg";
 import weatherProImg from "../assets/weather-pp.jpg";
 // Importing scroll visibility animation
 import TrackVisibility from "react-on-screen";
 // Importing tech stack icons
 import { FaReact, FaBootstrap, FaNodeJs } from "react-icons/fa";
-import { SiCss3, SiAxios, SiMongodb, SiExpress } from "react-icons/si";
+import { SiCss3, SiAxios, SiMongodb, SiExpress, SiSocketdotio } from "react-icons/si";
 
 const Projects = () => {
   // Project data array with image, title, description, tech icons, and links
   const projects = [
+    {
+      image: cryptoCrashImg, 
+      title: "Crypto Crash Game",
+      description:
+        "A real-time crypto crash game with secure authentication, live updates, and betting.",
+      techIcons: [
+        { icon: FaReact, color: "#61DBFB" },
+        { icon: FaNodeJs, color: "#3C873A" },
+        { icon: SiExpress, color: "white" },
+        { icon: SiMongodb, color: "#4DB33D" },
+        { icon: SiSocketdotio, color: "#f5eeeeff" }, 
+      ],
+      liveLink: "https://crypto-crashx.netlify.app", 
+      githubLink: "https://github.com/Pradeepa7/crypto-crashgame",
+    },
     {
       image: aiProImg,
       title: "AI Assistant",
@@ -126,10 +142,7 @@ const Projects = () => {
                       {/* Tech icons */}
                       <div className="tech-icon-group">
                         {project.techIcons.map(({ icon: Icon, color }, idx) => (
-                          <span
-                            key={idx}
-                            className="tech-icon-colored"
-                          >
+                          <span key={idx} className="tech-icon-colored">
                             <Icon
                               color={color}
                               fill={color}
