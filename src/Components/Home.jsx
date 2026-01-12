@@ -63,21 +63,21 @@ const Home = () => {
                   }`}
                 >
                   <a
-                    href="https://github.com/Pradeepa7"
+                    href="https://github.com/pradeepafsd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="bi bi-github"></i>
                   </a>
                   <a
-                    href="https://linkedin.com/in/pradeepacsekar7"
+                    href="https://linkedin.com/in/pradeepafsd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="bi bi-linkedin"></i>
                   </a>
                   <a
-                    href="https://x.com/Pradeepa_dev"
+                    href="https://x.com/pradeepafsd"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
