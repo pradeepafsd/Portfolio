@@ -83,13 +83,7 @@ const Home = () => {
                   >
                     <i className="bi bi-twitter-x"></i>
                   </a>
-                  <a
-                    href="https://instagram.com/the._delizz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="bi bi-instagram"></i>
-                  </a>
+                 
                 </div>
 
                 {/* Download CV Button with animation and styling */}
@@ -125,7 +119,7 @@ const Home = () => {
                   src={profile}
                   alt="profile"
                   className="img-fluid homeImg"
-                  style={{ maxWidth: "92%", height: "auto" }}
+                  style={{ maxWidth: "80%", height: "auto" }}
                 />
               </div>
             )}
